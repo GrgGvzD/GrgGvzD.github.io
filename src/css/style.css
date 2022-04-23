@@ -215,7 +215,7 @@ main{
     transform: scale(1.1);
     }
 .imgIcons{
-    width: auto;
+    width: 45px;
     //padding: 5% 10% 2% 10%;
     margin:  5% 11% 2% 11%;
     
@@ -336,19 +336,47 @@ main{
     text-transform: uppercase;
     color: #1c2534;
     font-size: 40px;
+     opacity: 0;
+    -webkit-animation: price_move 1s ease forwards;
+    -o-animation: price_move 1s ease forwards;
+    animation: price_move 1s ease forwards;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
     
+}
+@keyframes price_move{
+    from{
+        opacity: 0;
+        margin-left: -500px;
+    }
+    to{
+        opacity: 1;
+        margin-left: 20px;
+    }
 }
 
 .price {
     padding-top: 10%;
     margin-left: 20%;
-    padding-left: 10%;
+    padding-left: 25px
 }
 .price select{
     width: 860px;
     font-size: 30px;
     color: #737373;
     margin-bottom: 40px;
+     -webkit-animation: select-opacity 4s ease;
+    -o-animation: select-opacity 4s ease;
+    animation: select-opacity 4s ease;
+}
+@keyframes select-opacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 .price p{
     font-size: 35px;
@@ -359,20 +387,22 @@ main{
 .stat .res{
     float: left;
     padding: 0% 10.5% 0% 8%;
-    margin-left: 49px;
-    font-size: 60px;
+    margin-left: 40px;
+    font-size: 40px;
     font-weight: bold;
     color: #323e4f;
+   // border: 1px solid black;
     
 }
 .stat .res2{
      float: left;
     padding: 20px 6% 0% 6%;
-    margin-left: 30px;
-    font-size: 30px;
+    margin-left: 35px;
+    font-size: 20px;
    text-transform: uppercase;
     color: #323e4f;
     font-family: Franklin Gothic Medium;
+   //  border: 1px solid black;
    
 }
 .stat{
@@ -390,10 +420,11 @@ footer{
     width: 1920px;
     height: 60%;
     color: white;
-    margin-left: 14%;
+    //margin-left: 10%;
+    
 }
 footer  h2, h4{
-    padding-top: 30px;
+    padding-top: 20px;
     color: white;
     text-align: center;
 
@@ -439,7 +470,7 @@ form textarea{
     display: block;
     padding-top: 10px;
     width: 745px;
-    height: 100px;
+    height: 80px;
 }
 form input{
     float: left;

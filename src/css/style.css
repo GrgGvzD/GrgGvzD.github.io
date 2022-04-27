@@ -89,6 +89,7 @@ main{
     color: white;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
    
 }
 .menu li a:visited{
@@ -490,6 +491,13 @@ form .butt{
 text-align: center;
 background: transparent;
 color: #f9faff;
+}
+form .butt:hover{
+    background: #344051;
+    color: white;
+}
+form .butt:active{
+    transform: scale(1.1);
 }
 .pic {
     text-align: center;

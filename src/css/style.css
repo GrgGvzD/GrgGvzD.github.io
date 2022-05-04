@@ -488,7 +488,21 @@ footer h2{
 footer h3{
     text-transform: uppercase;
 }
-.adress{
+footer .adr{
+    float: left;
+    width: 200px;
+    display: flex;
+    border: 1px solid whitesmoke;///////////////
+    
+}
+.adr .cont{
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    
+}
+/*.adress{
     float: left;
    // margin-top: 40px;
     //margin-left: 500px;
@@ -509,7 +523,7 @@ footer h3{
     display: flex;
     justify-content: space-around;
 
-}
+}*/
 footer h5{
     margin-top: 100px;
     /*color: white;*/
@@ -525,6 +539,7 @@ form {
 }
 form textarea{
     display: block;
+    float: left;
     padding-top: 10px;
     width: 745px;
     height: 80px;
@@ -559,25 +574,31 @@ form .butt:active{
     transform: scale(1.1);
 }
 .pic {
+   
     width: 100%;
+    height: 150px;
     text-align: center;
-    margin-left: 20%;
-    //border: 1px solid whitesmoke;///////////////
+   // margin-left: 20%;
+    border: 1px solid whitesmoke;///////////////
     margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
 }
 
 .iconsCont {
     //width: 40px;
     height: 30px;
-    float:  left;
+   // float:  left;
     color: white;
    // margin: 1% 5% 0% 10.5%;
    // padding: 0% 3% 0% 3%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    //border: 1px solid whitesmoke;///////////////
+    //flex-direction: row;
+    justify-content: center;
+   // flex-wrap: nowrap;
+    border: 1px solid whitesmoke;///////////////
 }
 
 /*p {
